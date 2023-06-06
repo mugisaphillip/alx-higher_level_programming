@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for letter in range(97, 123):
-    print(f"{chr(letter)}", end="")
+for ltr in range(97, 123):
+    print("{}".format(chr(ltr)), end="")
