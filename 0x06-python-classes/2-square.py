@@ -10,7 +10,7 @@ class Square:
         """ initiatization """
 
         if (type(size) is not int):
-            raize TypeError("Size must be an integer")
+            raise TypeError("Size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
