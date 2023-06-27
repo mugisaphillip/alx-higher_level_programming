@@ -2,6 +2,7 @@
 
 """Class Defining a class square"""
 
+
 class Square:
     """ Square Representation"""
     pass
