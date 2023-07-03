@@ -10,10 +10,10 @@ class Rectangle:
     attr2(height): height of rectangle
     """
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
-    @width
+    @property
     def width(self):
         """Gets the width of the class instance"""
         return self.__width
@@ -27,7 +27,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @height
+    @property
     def height(self):
         """Gets the height of the class instance"""
         return self.__height
