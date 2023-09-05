@@ -1,0 +1,23 @@
+The ''5-text_indentation.py'' module
+====================================
+
+Using ''text_indentation''
+--------------------------
+
+importing function:
+	>>> text_indentation = __import__("5-text_indentation.py").text_indentation
+
+valid example:
+	>>> sentence = "This is Eternal Life. That you might know the one true God and His only son Jesus Christ."
+	>>> text_indentation(sentence)
+	This is Eternal Life.
+	
+	That you might know the one true God and His only son Jesus Christ.
+
+	
+text is not a string:
+	>>> text = 123
+	>>> text_indentation(text)
+	Traceback (most recent last call):
+	...
+	TypeError: text must be a string
