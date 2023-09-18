@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-from models.base import Base
 """ Rectangle model class """
+from models.base import Base
 
 
 class Rectangle(Base):
-    """
-    Rectangle model class
-    """
+    """Rectangle model class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
@@ -19,10 +17,10 @@ class Rectangle(Base):
             y (int): y cordinate of the rectangle
             id (int): id of the Rectangle object
         """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
