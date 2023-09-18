@@ -18,8 +18,9 @@ class Rectangle(Base):
             id (int): id of the Rectangle object
 
         Raises:
-            TypeError: if the input is not an integer
+            TypeError: if either width or height is not an integer
             ValueError: if width or height value <= 0
+            TypeError: if either x or y is not an integer
             ValueError: if x or y < 0
         """
         self.width = width
